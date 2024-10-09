@@ -3,8 +3,7 @@ import os
 from decouple import config
 from core.web3 import Web3Core
 from web3 import Web3
-from events.models import Transfer
-from django.db import transaction, IntegrityError
+from django.db import IntegrityError
 
 class CoreContract:
     contract_address_env = None
